@@ -1,0 +1,434 @@
+html {
+    /*    1em = 16px */
+    font-size: 1em;
+}
+
+body { 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    /*    line-height is 150% of the font size*/
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 1);
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .43; 
+    z-index: -1;
+/*    background-color: aquamarine;*/
+/*    background: url(../img/cs03.jpeg) center center no-repeat;*/
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 1.3em;
+    margin-top: 0em;
+}
+/* Add a black background color to the top navigation */
+.nav {
+/*  background-color: rgba(131, 121, 93, 0.66);*/
+/*    background-color: rgba(255, 255, 255, 0.5);*/
+    background-color: rgba(108, 122, 137, 1);
+/*    opacity: 0.9;*/
+  height: 50px;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+  float: center;
+  display: block;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 30px;
+  margin-left: 85px;
+  margin-top: -8px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+/*  border-bottom: 3px solid transparent;*/
+  height: 1px;
+/*  background-color: black;*/
+}
+
+.nav a:hover {
+/*    border-style: solid;*/
+/*    border-right: 1px, solid;*/
+/*    line-height: 1.5px;*/
+/*    color: rgba(38, 37, 37, 0.33);*/
+}
+
+.nav a.active {
+    color: rgb(250, 176, 40);
+}
+
+/*this is a group selection, selecting all the headlines h1-h4*/
+h1,h2,h3,h4 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.0;
+}
+
+/*header text */
+h1,h5,h3{
+    color: black;
+/*    opacity: 0.8;*/
+}
+h1 {
+    /*  top:0 right:0  bottom:0.5em left:0*/
+    word-spacing: normal;
+    margin: 2.0em 0 0.5em 0;
+    font-size: 1.850em;
+    font-weight: 600;
+/*    font-family: 'Work Sans', sans-serif;*/
+}
+
+/* My name's header format in the header(view) section*/
+h2 {
+    /*  top:0 right:0  bottom:0.5em left:0*/
+    word-spacing: normal;
+    margin: 1.0em 0 0.5em 0;
+    font-size: 2.050em;
+/*    font-family: 'Yanone Kaffeesatz', sans-serif;*/
+    font-family: 'Work Sans', sans-serif;
+    font-weight:200;
+}
+
+h3 {
+    /*  top:1.414em right:0  bottom:0.5em left:0*/
+    margin: 0.2em 0 0.5em 0;
+    font-size: 1.077em;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h4 {
+    /*  top:1.414em right:0  bottom:0.5em left:0*/
+    margin: 0.20em 0 0.5em 0;
+    font-size: 1.333em;
+    line-height: 1.3em;
+}
+
+h5 {
+    margin: 0.2em 0 0.5em 0;
+    font-size: 1.077em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+h6 {
+    /*  top:1.414em right:0  bottom:0.5em left:0*/
+/*    margin: 6.2em 0 0.2em 0;*/
+    margin-top: 3em;
+    align-content: center;
+    top: 1000px;
+    font-size: 0.90em;
+    font-weight: 630;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h7 {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* For resume, section header*/
+h8 {
+    text-align: center;
+    font-size: 1.45em;
+/*    font-family: 'Work Sans', sans-serif;*/
+    font-weight: 900;
+/*    font-style: */
+}
+
+/*work experience/education content font*/
+h9 {
+    font-size: 1.15em;
+    text-align: center;
+    font-weight: 700;
+}
+
+h9::after{
+    content: '\A';
+}
+/*work experience/education content font*/
+h10{
+    font-size: 1.05em;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+/*project description*/
+h11 {
+    margin: 0.2em 0 0.5em 0;
+    font-size: 0.977em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+small,
+.font_small {
+    font-size: 0.75em;
+}
+
+
+/* link*/
+
+a {
+    color: #0287b4;
+}
+
+a:hover {
+    color: #B2B1AE;
+/*    text-decoration: none;*/
+}
+
+/*button style*/
+/*solid button style*/
+.btn {
+    font-size: 1rem;
+    letter-spacing: .1em;
+    line-height: 2em;
+    border-radius: 2em;
+    /*    top:1.8 right:3.6 bottom 1.8 left3.6*/
+    /*    the size of button*/
+    padding: .5em 1em;
+    color: black;
+    background: rgba(0, 0, 255, 0.5);
+    border: none;
+}
+
+.btn:hover {
+    color: #f8ab41;
+    background-color: black;
+    opacity: 0.8;
+}
+
+/*for "download resume button", outline button style*/ 
+.btn-primary-outline {
+    border-radius: 0;
+    color: indigo;
+    background-color: transparent;
+    border: 0.5px indigo solid;
+    transition: all 0.5s;
+}
+
+.btn-primary-outline:hover {
+    color: white;
+    background-color: darkgray;
+    border-color: black;
+}
+
+/*read more in project section*/
+.project-btn {
+    margin-top: 0.8em;
+    border-radius: 1;
+    color: rgb(255, 88, 0);
+    background-color: transparent;
+    border: 0.4px rgb(255, 88, 0) solid;
+    transition: all 0.5s;
+}
+
+.project-btn:hover {
+    color: white;
+    background-color: darkgray;
+    border-color: black;
+}
+
+
+
+.view {
+    /* padding (left) = top and bottom padding, (right) = left and right padding*/
+    padding: 1em 0em;
+    text-align: center;
+    height: 200px;
+    background: url(../img/cs05.jpg) 0.0em center no-repeat;
+}
+.view::before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+/*    min-height: 25%;  */
+    opacity: .73; 
+    z-index: -1;
+/*    background-color: black;*/
+/*    background: url(../img/cs05.jpeg) center center no-repeat;*/
+}
+
+.bottom{
+    padding: 3.2em 10em;
+    text-align: center;
+    color: white;
+    background-color: rgba(108, 122, 137, 1);    
+/*    opacity: .40;*/
+/*    height: */
+}
+
+.copyRight{
+    margin-top: 2em;
+    margin-bottom: 1.0em;
+}
+
+/*
+.bottom::before{
+    content: "";
+    position: absolute;
+    top: 28; 
+    left: 0;
+    width: 100%; 
+    height: 20%;   
+    z-index: -1;
+    background-color: black;    
+    opacity: .40;
+}
+*/
+/*class name needs to start with "." */
+.space {
+    margin-top:20px;
+    margin-left: -700px;
+    color: black;
+    border-style: hidden
+}
+.me {
+    margin top: 30px;
+}
+
+.centered{
+    text-align: center;
+}
+
+.contact_input{
+    margin: 0 0 35em 40em;
+    width: 400px;
+    align-items: center;
+}
+
+.projectImages{
+    margin-top: 2.5em;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 50px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+/*  border-style: solid;*/
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+/*  opacity: 0.7;*/
+}
+
+/* Set a specific color for each brand */
+
+.fa-instagram {
+  color: transparent;
+/*    border-color: dimgray;*/
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.fa-linkedin-square{
+    color: #007bb6;
+}
+
+.fa-github{
+    color:black;
+}
+
+.fa-envelope{
+    color: grey;
+/*    color: rgba(173, 177, 230, 0.81);*/
+}
+.fa-icon{
+    margin-right: 70px;
+    margin-left:70px;
+    margin-top: 20px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.row1{
+    margin-top: 40px;
+}
+
+.nextRow{
+    margin-top: 20px;
+}
+
+.gallery{
+    height:360px;
+    width: 330px;
+}
+
+.description{
+    margin-top: 30px;
+/*    margin-bottom: 10px;*/
+}
+#bodyIntro{
+    margin-bottom: 220px;
+}
+
+/*id object begins with a "#" */
+#myEmail{
+    margin-left: 20px;
+}
+#myGithub{
+    margin-left: 55px;
+}
+#myLinkedin{
+    margin-left: 35px;
+}
+#myInstagram{
+    margin-left: 55px;
+}
+
+#photos{
+    margin-bottom: 200px;
+}
+#about{
+    background-color: white;
+/*    padding-top: 1%;*/
+/*    background: url(../img/cs04.gif) center center no-repeat;*/
+}
+#skills{
+
+}
+
+#contactForm{
+    margin-bottom: 90px;
+}
+
+/*project*/
+#experience{
+    padding: 1.2em 0em;
+}
+
+#projects{
+    
+}
+
+#demo{
+
+}
